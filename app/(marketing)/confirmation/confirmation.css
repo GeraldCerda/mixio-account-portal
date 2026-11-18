@@ -22,7 +22,7 @@ a{color:var(--ppurple)}
 .band>*{position:relative}
 .band :focus-visible{outline-color:var(--white)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;border-bottom:1px solid var(--hairline)}
-.logo img{height:22px;display:block}
+.nav .logo img{display:block;width:116px;max-width:116px;height:auto;aspect-ratio:761 / 158;object-fit:contain;transform:none}
 .nav-help{font-size:14px;text-decoration:none;color:var(--muted)}
 .nav-help b{color:var(--white);font-weight:500}
 .steps{display:flex;gap:16px;justify-content:center;padding:28px 0 0;font-size:13px;list-style:none}
