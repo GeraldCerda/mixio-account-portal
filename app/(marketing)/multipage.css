@@ -1,7 +1,10 @@
 body { margin: 0; background: var(--black); }
 .mx-site-nav { z-index: 80; }
 .mx-site-nav-inner { display:flex; align-items:center; gap:24px; justify-content:space-between; min-height:74px; }
-.mx-site-nav .mx-nav-logo { width:112px; height:auto; }
+.mx-site-nav .mx-site-brand { display:inline-flex; align-items:center; flex:none; min-width:0; line-height:0; }
+.mx-site-nav .mx-site-brand .mx-nav-logo { display:block; flex:none; width:116px; max-width:116px; height:auto; max-height:none; aspect-ratio:761 / 158; object-fit:contain; transform:none; }
+.mx-site-footer-brand { display:inline-flex; align-items:center; justify-self:start; line-height:0; }
+.mx-site-footer .mx-site-footer-logo { display:block; width:110px; max-width:110px; height:auto; aspect-ratio:761 / 158; object-fit:contain; transform:none; }
 .mx-site-desktop { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:clamp(11px,1.35vw,24px); }
 .mx-site-desktop a, .mx-site-actions a, .mx-site-mobile a { font-size:13px; font-weight:600; text-decoration:none; white-space:nowrap; }
 .mx-site-desktop a { color:var(--muted); padding:15px 0; transition:color .2s; }
