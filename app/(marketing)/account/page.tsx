@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { PageIntro } from "@/components/mixio/PageParts";
+import { AccountContent } from "@/components/mixio/account/AccountPortal";
+import { getAccountSnapshot, getVerifiedAccountSession } from "@/lib/mixio/account";
 
-export const metadata: Metadata = { title: "Account | Mixio" };
-export default function AccountPage() { return <main id="main"><PageIntro eyebrow="Account access" title="Your Mixio" accent="account." description="Account sign-in and subscription management are not connected to this preview. Contact support if you need help accessing your account."><Link className="mx-btn mx-btn-primary" href="/login">Account help</Link><Link className="mx-btn mx-btn-ghost" href="/support">Contact support</Link></PageIntro></main>; }
+export const metadata: Metadata = { title: "Account overview | Mixio" };
+
+export default async function AccountPage() {
+  const session = await getVerifiedAccountSession();
+  if (!session) return null;
+  const snapshot = await getAccountSnapshot(session);
+  return <AccountContent section="overview" session={session} snapshot={snapshot} />;
+}
