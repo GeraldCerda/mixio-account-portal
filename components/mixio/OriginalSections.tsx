@@ -15,7 +15,7 @@ export function HeroSection() {
           <div className="ui-glow" aria-hidden="true"></div>
           <div className="lines-wrap">
             <img className="ui-lines" src="/assets/img/ui-lines.jpg" width="900" height="285" fetchPriority="high"
-                 alt="Mixio's frequency analyser: coloured lines showing the bass, guitars, vocals and other instruments across the spectrum from 20Hz to 20kHz." />
+                 alt="Mixio's frequency analyzer: colored lines showing the bass, guitars, vocals and other instruments across the spectrum from 20Hz to 20kHz." />
           </div>
           <img className="ui-card ui-mode" src="/assets/img/ui-mode.jpg" width="466" height="60" alt="" />
           <img className="ui-card ui-prompt" src="/assets/img/ui-prompt.jpg" width="478" height="92" alt="A Mixio chat prompt: “Give the guitars more presence”, set to 32%, with Edit and Remove." />
@@ -33,7 +33,7 @@ export function AudioDemoSection() {
         <div className="mx-sh mx-sh-center">
           <p className="mx-eyebrow">Before and after</p>
           <h2 id="demo-title" className="mx-h2">Same song. <span className="mx-accent">Pro mix.</span></h2>
-          <p className="mx-sh-body">One track, before and after Mixio. Sound off? Each stage shows the waveform and says what changed.</p>
+          <p className="mx-sh-body">One track, before and after Mixio. Compare the waveforms and listening notes for both versions, with or without sound.</p>
         </div>
 
         <div className="mx-player">
@@ -96,7 +96,7 @@ export function ProductSection() {
             <ul className="card-list">
               <li>Checks spectral balance, stereo field, dynamics and frequency relationships across every track</li>
               <li>Gain-stages from each stem through to the master bus</li>
-              <li>Masters for streaming by monitoring LUFS levels and optimising stereo loudness</li>
+              <li>Masters for streaming by monitoring LUFS levels and optimizing stereo loudness</li>
             </ul>
           </article>
           <article className="mx-card">
@@ -181,7 +181,7 @@ export function ExpertiseSection() {
           <div className="mx-quote-rule"></div>
           <figcaption>
             <div className="mx-quote-name">Mark “Spike” Stent</div>
-            <div className="mx-quote-role">Grammy winning mix engineer · Founder</div>
+            <div className="mx-quote-role">Grammy-winning mix engineer · Founder</div>
           </figcaption>
         </figure>
       </div>
@@ -223,7 +223,7 @@ export function UseCasesSection() {
           <article className="uc-row">
             <div className="uc-visual uc-release">
               <div className="ui-glow" aria-hidden="true"></div>
-              <img className="uc-lines" src="/assets/img/ui-lines.jpg" width="900" height="285" loading="lazy" alt="Mixio's frequency analyser showing each instrument's balance across the spectrum." />
+              <img className="uc-lines" src="/assets/img/ui-lines.jpg" width="900" height="285" loading="lazy" alt="Mixio's frequency analyzer showing each instrument's balance across the spectrum." />
               <img className="ui-card uc-b" src="/assets/img/ui-knobs.jpg" width="362" height="156" loading="lazy" alt="The Reanalyze button with glue and width knobs." />
             </div>
             <div className="uc-copy">
@@ -251,7 +251,7 @@ export function ProofSection() {
             <blockquote className="mx-quote-text">I think Mixio could be the most useful plug in you'll ever buy! Whether you use it on the whole mix, the lead vocal or that “problem” track that you just can't get to sit right, Mixio solves all your problems in mere seconds!</blockquote>
             <div className="mx-quote-rule"></div>
             <figcaption>
-              <div className="mx-quote-name">Rob Cavallo</div><div className="mx-quote-role">Grammy winning producer · Advisor</div>
+              <div className="mx-quote-name">Rob Cavallo</div><div className="mx-quote-role">Grammy-winning producer · Advisor</div>
             </figcaption>
           </figure>
           <figure className="mx-quote">
@@ -267,7 +267,7 @@ export function ProofSection() {
             <blockquote className="mx-quote-text">It's 45 years of knowledge put into something that everyone can access and use.</blockquote>
             <div className="mx-quote-rule"></div>
             <figcaption>
-              <div className="mx-quote-name">Mark “Spike” Stent</div><div className="mx-quote-role">Grammy winning mix engineer · Founder</div>
+              <div className="mx-quote-name">Mark “Spike” Stent</div><div className="mx-quote-role">Grammy-winning mix engineer · Founder</div>
             </figcaption>
           </figure>
         </div>
