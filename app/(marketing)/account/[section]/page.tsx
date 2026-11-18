@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { AccountContent } from "@/components/mixio/account/AccountPortal";
-import { getAccountSnapshot, getVerifiedAccountSession, accountSections, type AccountSection } from "@/lib/mixio/account";
+import { getAccountSnapshot, getAccountView, getEmptyAccountSnapshot, accountSections, type AccountSection } from "@/lib/mixio/account";
+
+export const dynamic = "force-dynamic";
 
 type PageProps = { params: Promise<{ section: string }> };
 
@@ -15,8 +17,8 @@ export default async function AccountSectionPage({ params }: PageProps) {
   const { section } = await params;
   if (section === "overview") notFound();
   if (!accountSections.some(item => item.id === section)) notFound();
-  const session = await getVerifiedAccountSession();
-  if (!session) return null;
-  const snapshot = await getAccountSnapshot(session);
+  const { session, preview } = await getAccountView();
+  if (!session && !preview) return null;
+  const snapshot = session ? await getAccountSnapshot(session) : getEmptyAccountSnapshot();
   return <AccountContent section={section as AccountSection} session={session} snapshot={snapshot} />;
 }
