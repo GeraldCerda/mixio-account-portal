@@ -33,12 +33,12 @@ export default function PlansPage() {
         <a className="btn btn-ghost" href="/checkout/?plan=monthly" data-plan-select="monthly">Try Mixio Monthly</a>
       </article>
 
-      <article className="plan featured" aria-labelledby="annual">
-        <div className="plan-top"><h2 className="tier" id="annual">Annual</h2><span className="save">2 months free</span></div>
+      <article className="plan featured" aria-labelledby="yearly">
+        <div className="plan-top"><h2 className="tier" id="yearly">Yearly</h2><span className="save">2 months free</span></div>
         <p className="price"><strong>$149.99</strong><span>/ year</span></p>
         <p className="equiv">Works out at <b>$12.50 a month</b>, billed yearly</p>
         <p className="trialnote"><b>14 days free</b>, then $149.99 for the year. Cancel before your trial ends and you won't be charged.</p>
-        <a className="btn btn-primary" href="/checkout/?plan=annual" data-plan-select="annual">Try Mixio Annually</a>
+        <a className="btn btn-primary" href="/checkout/?plan=yearly" data-plan-select="yearly">Try Mixio Yearlyly</a>
       </article>
     </div>
   </div>
