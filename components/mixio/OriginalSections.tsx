@@ -294,13 +294,13 @@ export function PricingSection() {
             <ul className="mx-price-list" data-offer-list="planFeatures"></ul>
             <a className="mx-btn mx-btn-ghost" data-cta="pricing" data-cta-plan="monthly" href="/checkout/?plan=monthly">Start Monthly Trial</a>
           </article>
-          <article className="mx-price-card mx-featured" data-plan="annual">
+          <article className="mx-price-card mx-featured" data-plan="yearly">
             <div className="mx-price-head"><h3 className="mx-price-tier" data-plan-field="name"></h3><span className="mx-badge mx-badge-tag" data-plan-field="note"></span></div>
             <p className="mx-price" data-plan-field="price"></p>
             <p className="mx-price-period"><span data-plan-field="periodLabel"></span> · <span data-plan-field="billing"></span></p>
             <div className="mx-price-rule"></div>
             <ul className="mx-price-list" data-offer-list="planFeatures"></ul>
-            <a className="mx-btn mx-btn-primary" data-cta="pricing" data-cta-plan="annual" href="/checkout/?plan=annual">Start Annual Trial</a>
+            <a className="mx-btn mx-btn-primary" data-cta="pricing" data-cta-plan="yearly" href="/checkout/?plan=yearly">Start Yearly Trial</a>
           </article>
         </div>
         <ul className="trial-terms" data-offer-list="trialTerms"></ul>
