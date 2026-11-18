@@ -1,4 +1,5 @@
 import { AudioDemoSection, ExpertiseSection, FinalSection, HeroSection } from "@/components/mixio/OriginalSections";
+import { FaqSection } from "@/components/mixio/FaqSection";
 
 export default function MixioHomePage() {
   return (
@@ -13,6 +14,7 @@ export default function MixioHomePage() {
         </div>
       </section>
       <ExpertiseSection />
+      <FaqSection showViewAll />
       <FinalSection />
     </main>
   );
