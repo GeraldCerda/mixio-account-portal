@@ -43,7 +43,7 @@ export default async function ConfirmationPage({
     <>
       <div className="band">
         <header className="nav"><div className="wrap">
-          <a className="logo" href="/"><img src="/assets/img/mixio-logo.svg" alt="Mixio" /></a>
+          <a className="logo" href="/"><img src="/assets/img/mixio-logo-white.png" alt="Mixio" width={761} height={158} /></a>
           <a className="nav-help" href="mailto:info@mixio.music">Questions? <b>Contact support</b></a>
         </div></header>
         <div className="wrap head">
