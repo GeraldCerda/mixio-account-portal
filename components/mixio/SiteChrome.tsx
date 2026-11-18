@@ -37,7 +37,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
       <a className="skip-link" href="#main">Skip to content</a>
       <header className="mx-nav mx-site-nav">
         <div className="wrap mx-site-nav-inner">
-          <Link aria-label="Mixio home" className="mx-nav-home" href="/"><img className="mx-nav-logo" src="/assets/img/mixio-logo-white.png" alt="Mixio" width="761" height="158" /></Link>
+          <Link aria-label="Mixio home" className="mx-nav-home mx-site-brand" href="/"><img className="mx-nav-logo" src="/assets/img/mixio-logo-white.png" alt="Mixio" width="761" height="158" /></Link>
           <nav className="mx-site-desktop" aria-label="Primary navigation">
             {navigation.map((item) => <Link key={item.href} href={item.href} aria-current={active(item.href) ? "page" : undefined}>{item.label}</Link>)}
           </nav>
@@ -50,7 +50,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
         </nav>
       </header>
       {children}
-      <footer className="mx-site-footer"><div className="wrap mx-site-footer-inner"><Link href="/"><img src="/assets/img/mixio-logo-white.png" alt="Mixio" width="761" height="158" /></Link><p>Professional mixing and mastering inside your DAW.</p><nav aria-label="Footer links"><Link href="/about">About</Link><Link href="/stories">Stories</Link><Link href="/support">Support</Link><Link href="/download">Download</Link><a href="https://mixio.music/terms">Terms</a><a href="https://mixio.music/privacy">Privacy</a></nav><small>© {new Date().getFullYear()} Mixio</small></div></footer>
+      <footer className="mx-site-footer"><div className="wrap mx-site-footer-inner"><Link className="mx-site-footer-brand" href="/"><img className="mx-site-footer-logo" src="/assets/img/mixio-logo-white.png" alt="Mixio" width="761" height="158" /></Link><p>Professional mixing and mastering inside your DAW.</p><nav aria-label="Footer links"><Link href="/about">About</Link><Link href="/stories">Stories</Link><Link href="/support">Support</Link><Link href="/download">Download</Link><a href="https://mixio.music/terms">Terms</a><a href="https://mixio.music/privacy">Privacy</a></nav><small>© {new Date().getFullYear()} Mixio</small></div></footer>
     </>
   );
 }
