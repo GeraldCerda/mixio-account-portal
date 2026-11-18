@@ -51,12 +51,24 @@ export async function getVerifiedAccountSession(): Promise<AccountSession | null
   return null;
 }
 
-export async function getAccountSnapshot(_session: AccountSession): Promise<AccountSnapshot> {
+export function getEmptyAccountSnapshot(): AccountSnapshot {
   return {
     profile: null,
     subscription: null,
     invoices: null,
     license: null,
     devices: null,
+  };
+}
+
+export async function getAccountSnapshot(_session: AccountSession): Promise<AccountSnapshot> {
+  return getEmptyAccountSnapshot();
+}
+
+export async function getAccountView(): Promise<{ session: AccountSession | null; preview: boolean }> {
+  const session = await getVerifiedAccountSession();
+  return {
+    session,
+    preview: session === null && process.env.VERCEL_ENV === "preview",
   };
 }
