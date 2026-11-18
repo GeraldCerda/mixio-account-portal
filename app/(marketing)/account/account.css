@@ -1,0 +1,60 @@
+.mx-account-root{min-height:100vh;background:radial-gradient(ellipse at 62% -15%,rgba(76,23,133,.27),transparent 47%),#09090d;color:#f5f3f8;font:400 14px/1.5 "DM Sans",Arial,sans-serif}
+.mx-account-root *{box-sizing:border-box}
+.mx-account-root a{text-decoration:none;color:inherit}
+.mx-account-root button,.mx-account-root input{font:inherit}
+.mx-account-top,.mx-account-auth-header{min-height:70px;padding:16px clamp(20px,3vw,36px);display:flex;align-items:center;gap:20px;background:linear-gradient(105deg,rgba(74,0,177,.12),rgba(27,19,181,.11));border-bottom:1px solid rgba(255,255,255,.08)}
+.mx-account-brand{display:inline-flex;align-items:center;line-height:0;flex:none}
+.mx-account-brand img{display:block;width:119px;height:auto;aspect-ratio:761/158;object-fit:contain}
+.mx-account-top-label{margin-left:auto;color:#bdb0d5;font-size:10px;letter-spacing:.18em;font-weight:700}
+.mx-account-back{color:#c5addf!important;font-size:12px;font-weight:700}
+.mx-account-layout{display:grid;grid-template-columns:240px minmax(0,1fr);max-width:1450px;margin:0 auto;min-height:calc(100vh - 70px)}
+.mx-account-aside{display:flex;flex-direction:column;gap:10px;padding:30px 16px;border-right:1px solid #282431;min-width:0}
+.mx-account-eyebrow{color:#9e83d0;text-transform:uppercase;letter-spacing:.16em;font-size:10px;font-weight:800}
+.mx-account-aside>.mx-account-eyebrow{padding-left:12px;margin:0 0 4px}
+.mx-account-aside nav{display:grid;gap:4px}
+.mx-account-aside nav a{display:flex;align-items:center;padding:12px 13px;border-radius:8px;font-size:13px;font-weight:600;color:#aaa2b7}
+.mx-account-aside nav a:hover,.mx-account-aside nav a:focus-visible{background:#28173b;color:#fff}
+.mx-account-aside nav a[aria-current=page]{color:#fff;background:linear-gradient(90deg,rgba(61,24,103,.8),rgba(37,20,73,.3));box-shadow:inset 3px 0 #a77aff}
+.mx-account-help{margin-top:auto;padding:18px;border:1px solid #372747;border-radius:10px;background:linear-gradient(145deg,#1d1629,#111017)}
+.mx-account-help strong{font-size:13px}
+.mx-account-help p{color:#a39aaf;font-size:12px;margin:8px 0}
+.mx-account-help a,.mx-account-text-link{color:#b999ff!important;font-size:12px;font-weight:700}
+.mx-account-identity{padding-top:17px;border-top:1px solid #2b2735;display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere}
+.mx-account-identity strong{font-size:13px}
+.mx-account-identity small{font-size:11px;color:#b0a9be}
+.mx-account-main{max-width:1150px;width:100%;min-width:0;margin:0 auto;padding:38px clamp(20px,4vw,48px) 28px}
+.mx-account-heading{margin:0 0 26px}
+.mx-account-heading h1{font:700 clamp(27px,3.3vw,36px)/1.2 var(--font-display);letter-spacing:-.035em;margin:9px 0}
+.mx-account-heading p:last-child{color:#a9a3b5;font-size:14px}
+.mx-account-stack{display:grid;gap:17px;align-content:start}
+.mx-account-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.6fr);gap:17px;align-items:start}
+.mx-account-panel{padding:25px;border-radius:12px;border:1px solid #2f2a39;background:linear-gradient(150deg,#17141e,#101016)}
+.mx-account-panel>header{margin:0 0 19px}
+.mx-account-panel h2{color:#faf8fd;font:700 17px/1.25 var(--font-display);margin:0 0 8px}
+.mx-account-panel header p{color:#aaa2b6;font-size:12px;margin:0}
+.mx-account-row{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-top:1px solid #2d2936;padding:14px 0;font-size:13px}
+.mx-account-row span{color:#aaa4b2}
+.mx-account-row strong{color:#f5f2f8;text-align:right;font-size:13px;overflow-wrap:anywhere}
+.mx-account-text-link{display:inline-block;margin-top:15px}
+.mx-account-empty{border:1px dashed #493d58;border-radius:9px;background:#11101a;padding:24px}
+.mx-account-empty strong{color:#e9dffc;font-size:14px}
+.mx-account-empty p,.mx-account-muted{color:#aca4ba;font-size:13px;line-height:1.75;margin:9px 0}
+.mx-account-button{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border:1px solid #765a9b;border-radius:8px;color:#e0cefb!important;background:#22152f;font-size:13px;font-weight:700;margin-top:16px}
+.mx-account-button:hover,.mx-account-button:focus-visible{border-color:#b8a0f7}
+.mx-account-button-primary{background:#6033a4;color:white!important;border-color:#7541bd}
+.mx-account-table-wrap{overflow-x:auto}
+.mx-account-table-wrap table{width:100%;border-collapse:collapse;text-align:left}
+.mx-account-table-wrap th,.mx-account-table-wrap td{padding:12px;border-bottom:1px solid #312a3b;text-align:left;font-size:12px}
+.mx-account-table-wrap th{color:#c6b6d5}
+.mx-account-table-wrap a{color:#b995ff}
+.mx-account-footer{display:flex;gap:20px;justify-content:space-between;margin-top:36px;padding:20px 0;border-top:1px solid #302b39;font-size:12px;color:#968da5}
+.mx-account-footer a{color:#c3a4fd}
+.mx-account-auth-header{justify-content:space-between}
+.mx-account-auth-wrap{max-width:650px;margin:min(13vh,120px) auto 0;padding:36px 25px 85px}
+.mx-account-auth-wrap h1{font:800 clamp(38px,6vw,65px)/1.06 var(--font-display);letter-spacing:-.05em;margin:16px 0 24px}
+.mx-account-auth-wrap>p:not(.mx-account-eyebrow){color:#bdb4c9;font-size:16px;line-height:1.7}
+.mx-account-auth-actions{display:flex;gap:13px;flex-wrap:wrap;margin:22px 0 25px}
+.mx-account-auth-actions .mx-account-button{margin:0;min-width:165px}
+.mx-account-auth-wrap .mx-account-boundary{color:#9c94a8!important;font-size:12px!important;border-top:1px solid #3b3248;padding-top:18px}
+@media(max-width:900px){.mx-account-layout{grid-template-columns:195px 1fr}.mx-account-aside{padding:20px 10px}.mx-account-columns{grid-template-columns:1fr}}
+@media(max-width:720px){.mx-account-layout{display:block}.mx-account-top{padding:14px 18px}.mx-account-aside{border-right:0;border-bottom:1px solid #2a2533;padding:12px 15px}.mx-account-aside nav{display:flex;overflow:auto;gap:5px}.mx-account-aside nav a{white-space:nowrap;padding:10px 12px}.mx-account-aside>.mx-account-eyebrow,.mx-account-help,.mx-account-identity{display:none}.mx-account-main{padding:29px 16px}.mx-account-panel{padding:20px}.mx-account-top-label{display:none}.mx-account-back{margin-left:auto}.mx-account-auth-wrap{margin:55px auto 0}}
