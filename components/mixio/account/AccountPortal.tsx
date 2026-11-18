@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { accountSections, type AccountSection, type AccountSession, type AccountSnapshot } from "@/lib/mixio/account";
+import { AccountNavigation } from "@/components/mixio/account/AccountNavigation";
 
 export function AccountGate() {
   return (
@@ -34,9 +35,7 @@ export function AccountFrame({ session, children }: { session: AccountSession; c
       <div className="mx-account-layout">
         <aside className="mx-account-aside">
           <p className="mx-account-eyebrow">WORKSPACE</p>
-          <nav aria-label="Account navigation">
-            {accountSections.map(section => <Link key={section.id} href={section.href}>{section.label}</Link>)}
-          </nav>
+          <AccountNavigation />
           <div className="mx-account-help">
             <strong>Need a hand?</strong>
             <p>Our support team can help with your account.</p>
