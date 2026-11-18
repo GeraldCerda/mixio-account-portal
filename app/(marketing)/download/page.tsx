@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { PageIntro } from "@/components/mixio/PageParts";
+
+export const metadata: Metadata = { title: "Download | Mixio" };
+export default function DownloadPage() { return <main id="main"><PageIntro eyebrow="Download Mixio" title="Make space for" accent="your next mix." description="The original website supplies installation screens after trial setup, but it does not include verified application installer URLs. Download access must connect to your existing account infrastructure."><Link href="/plans" className="mx-btn mx-btn-primary">See trial plans</Link><Link href="/resources/installation" className="mx-btn mx-btn-ghost">Installation details</Link></PageIntro><section className="section on-deep"><div className="wrap mx-display-grid"><figure><img width="466" height="268" src="/assets/img/ui-rack.jpg" alt="Original Mixio channel rack screenshot" /></figure><div><p className="mx-section-label">Not a simulated download</p><h2>Installer links require verification.</h2><p>Platform installers, license activation, and account-bound downloads are outside this source-only package. Existing authenticated download routes in the destination application should be retained.</p></div></div></section></main>; }

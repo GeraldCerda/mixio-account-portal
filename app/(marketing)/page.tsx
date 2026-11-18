@@ -1,3 +1,19 @@
-import Link from "next/link";
-import {Hero,Features,AudioCompare,Cta} from "@/components/mixio/Marketing";
-export default function Home(){return <><Hero eyebrow="INTELLIGENT MIXING, MADE HUMAN" title="You create. Mixio helps finish." description="A professional mixing and mastering workflow shaped around your music, right inside your DAW. Move faster without giving up your sound." image="/assets/img/ui-lines.jpg"/><section className="statement"><span className="eyebrow">MIX WITH INTENTION</span><h2>You're still the producer. You stay in control.</h2><p>Explore an integrated plugin and Assistant built to make creative decisions easier to execute.</p></section><Features items={[{eyebrow:"01 / THE ENGINE",title:"A better starting point for every mix.",description:"Bring balance, dynamics, spatial control and focused decisions into one workflow.",image:"/assets/img/ui-rack.jpg"},{eyebrow:"02 / THE ASSISTANT",title:"Describe the sound. Stay in the session.",description:"Express a creative direction in natural language and refine your processing without breaking the flow.",image:"/assets/img/ui-prompt.jpg"}]}/><AudioCompare/><section className="tiles"><Link href="/product"><span>Discover</span><h3>The audio engine ↗</h3></Link><Link href="/assistant"><span>Explore</span><h3>The Assistant ↗</h3></Link><Link href="/how-it-works"><span>Learn</span><h3>How it works ↗</h3></Link></section><Cta/></>}
+import { AudioDemoSection, ExpertiseSection, FinalSection, HeroSection } from "@/components/mixio/OriginalSections";
+
+export default function MixioHomePage() {
+  return (
+    <main id="main">
+      <HeroSection />
+      <AudioDemoSection />
+      <section className="mx-bridge section" aria-label="Explore Mixio">
+        <div className="wrap mx-bridge-grid">
+          <a href="/product" className="mx-bridge-link"><span>01 / Sound</span><strong>The Mixio engine</strong><span>See the original plugin interface and explore the processing approach.</span></a>
+          <a href="/assistant" className="mx-bridge-link"><span>02 / Workflow</span><strong>The Assistant</strong><span>Explore plain-language adjustments and session preparation.</span></a>
+          <a href="/how-it-works" className="mx-bridge-link"><span>03 / Setup</span><strong>How it works</strong><span>Follow the process from installing to refining a mix.</span></a>
+        </div>
+      </section>
+      <ExpertiseSection />
+      <FinalSection />
+    </main>
+  );
+}

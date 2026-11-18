@@ -1,13 +1,13 @@
 {
-  "name": "mixio-multipage-preview",
+  "name": "mixio-preserved-multipage",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
   },
   "dependencies": {
     "next": "15.5.29",
@@ -18,7 +18,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5",
+    "typescript": "^5.9.3",
     "eslint": "^9",
     "eslint-config-next": "15.5.29"
   }
