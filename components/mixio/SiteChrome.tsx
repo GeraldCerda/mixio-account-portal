@@ -12,6 +12,7 @@ const navigation = [
   { href: "/listen", label: "Listen" },
   { href: "/plans", label: "Pricing" },
   { href: "/resources", label: "Resources" },
+  { href: "/faq", label: "FAQ" },
 ] as const;
 
 export function SiteChrome({ children }: { children: ReactNode }) {
@@ -50,7 +51,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
         </nav>
       </header>
       {children}
-      <footer className="mx-site-footer"><div className="wrap mx-site-footer-inner"><Link className="mx-site-footer-brand" href="/"><img className="mx-site-footer-logo" src="/assets/img/mixio-logo-white.png" alt="Mixio" width="761" height="158" /></Link><p>Professional mixing and mastering inside your DAW.</p><nav aria-label="Footer links"><Link href="/about">About</Link><Link href="/stories">Stories</Link><Link href="/support">Support</Link><Link href="/download">Download</Link><a href="https://mixio.music/terms">Terms</a><a href="https://mixio.music/privacy">Privacy</a></nav><small>© {new Date().getFullYear()} Mixio</small></div></footer>
+      <footer className="mx-site-footer"><div className="wrap mx-site-footer-inner"><Link className="mx-site-footer-brand" href="/"><img className="mx-site-footer-logo" src="/assets/img/mixio-logo-white.png" alt="Mixio" width="761" height="158" /></Link><p>Professional mixing and mastering inside your DAW.</p><nav aria-label="Footer links"><Link href="/about">About</Link><Link href="/stories">Stories</Link><Link href="/support">Support</Link><Link href="/faq">FAQ</Link><Link href="/download">Download</Link><a href="https://mixio.music/terms">Terms</a><a href="https://mixio.music/privacy">Privacy</a></nav><small>© {new Date().getFullYear()} Mixio</small></div></footer>
     </>
   );
 }
