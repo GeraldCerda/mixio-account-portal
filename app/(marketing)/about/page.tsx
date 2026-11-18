@@ -3,4 +3,4 @@ import { PageIntro, TrialBanner } from "@/components/mixio/PageParts";
 import { ExpertiseSection } from "@/components/mixio/OriginalSections";
 
 export const metadata: Metadata = { title: "About Mixio | Mixio" };
-export default function AboutPage() { return <main id="main"><PageIntro eyebrow="About Mixio" title="Experience behind" accent="the engine." description="The original supplied website presents Mixio as built around the mixing knowledge of Mark ‘Spike’ Stent." /><ExpertiseSection /><TrialBanner /></main>; }
+export default function AboutPage() { return <main id="main"><PageIntro eyebrow="About Mixio" title="Experience behind" accent="the engine." description="Mixio draws on the mixing experience and creative judgment of Mark “Spike” Stent." /><ExpertiseSection /><TrialBanner /></main>; }
