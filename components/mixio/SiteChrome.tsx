@@ -31,7 +31,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
-  if (path === "/checkout" || path === "/confirmation") return <>{children}</>;
+  if (path.startsWith("/account") || path === "/checkout" || path === "/confirmation") return <>{children}</>;
   const active = (href: string) => href === "/" ? path === href : path === href || path.startsWith(href + "/");
   return (
     <>
