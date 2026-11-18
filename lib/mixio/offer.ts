@@ -14,12 +14,12 @@ export const OFFER = {
       billing: "Billed monthly",
       note: "",
     },
-    annual: {
-      id: "annual",
-      name: "Annual",
+    yearly: {
+      id: "yearly",
+      name: "Yearly",
       price: 149.99,
       period: "year",
-      billing: "Billed annually",
+      billing: "Billed yearly",
       note: "About 2 months free",
     },
   },
