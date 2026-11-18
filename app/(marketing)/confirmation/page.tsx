@@ -70,7 +70,7 @@ export default async function ConfirmationPage({
           </section>
           <section className="block" aria-labelledby="next-h">
             <h2 id="next-h">Next steps</h2>
-            <p className="sub"><a href="/resources/installation">Installation guidance</a> · <a href="/account">Account information</a> · <a href="mailto:info@mixio.music">Contact support</a></p>
+            <p className="sub"><a href="/download">Download and installation information</a> · <a href="/account">Account information</a> · <a href="mailto:info@mixio.music">Contact support</a></p>
           </section>
         </div>
         <aside>
@@ -78,7 +78,7 @@ export default async function ConfirmationPage({
             <h2 id="help-h">Need a hand?</h2>
             <ul className="helplist">
               <li><a href="/support">Support</a></li>
-              <li><a href="/resources/subscriptions">Subscription information</a></li>
+              <li><a href="/plans">Subscription plans</a></li>
               <li><a href="mailto:info@mixio.music">Email Mixio</a></li>
             </ul>
           </section>

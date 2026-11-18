@@ -84,3 +84,7 @@ The status below is relative to that exact archive, not to any previous assistan
 - `public/assets/audio/dance-demo-mixio.mp3` — `075ed5f3928b17fd56ada56ed1c54efcc595da08da9e84e5c92b983da074a598`
 
 All original assets are byte-identical to the source. The main homepage sections are redistributed in `OriginalSections.tsx`; see `INTEGRATION.md`. The new `app/layout.tsx` is a standalone fallback and must not overwrite an existing application root layout. The new `/account` and `/login` route boundaries must not replace functional existing routes.
+
+## Later change: Resources removed
+
+Following the combined-site review, the optional `/resources` page, eight generated article routes, search component and article dataset were removed from the website branch. This original baseline manifest remains as a historical comparison. Download and confirmation links now lead to the existing Support, Download and Plans pages.
