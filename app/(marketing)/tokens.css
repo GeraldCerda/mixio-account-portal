@@ -1,0 +1,39 @@
+/* Mixio design tokens — copied from the "Mixio - MU V1" design system (tokens.json). Edit there first, then sync here. */
+:root {
+  --black: #060608; --deep: #0c0c12; --frame: #0b0b14; --chrome: #1a1a24;
+  --surface-input: rgba(255,255,255,.05); --surface-raised: #121218;
+  --edge: rgba(152,150,174,.32); --edge-subtle: rgba(152,150,174,.2); --edge-featured: #7B5CF5;
+  --track: rgba(255,255,255,.08); --hairline: rgba(255,255,255,.06);
+  --purple: #7B5CF5; --purple-action: #7656F0; --purple-on-card: #9274f7; --purple-dim: #4a3799;
+  --purple-light: #a78bfa; --purple-glow: rgba(123,92,245,.15); --purple-step: rgba(123,92,245,.12);
+  --purple-outline: rgba(123,92,245,.6); --border: rgba(123,92,245,.18); --border-strong: rgba(123,92,245,.3);
+  --white: #F0EEF8; --pure-white: #ffffff;
+  --cream: #EDE3D3; --cream-tint: rgba(237,227,211,.07); --cream-border: rgba(237,227,211,.22);
+  --muted: #9896ae;
+  --live: #4ade80; --live-tint: rgba(74,222,128,.08); --live-border: rgba(74,222,128,.2); --on-live: #052e16;
+  --window-dot: #ff5f57; --window-dot-2: #febc2e; --window-dot-3: #28c840;
+
+  --font-display: Syne, sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+
+  --space-1: 4px; --space-2: 6px; --space-3: 8px; --space-4: 10px; --space-5: 14px; --space-6: 18px;
+  --space-7: 20px; --space-8: 24px; --space-9: 28px; --space-10: 36px; --space-11: 40px; --space-12: 44px;
+  --space-13: 60px; --space-14: 80px; --space-15: 120px; --space-16: 140px;
+
+  --radius-xs: 2px; --radius-sm: 6px; --radius-md: 10px; --radius-lg: 12px; --radius-xl: 16px;
+  --radius-2xl: 20px; --radius-3xl: 24px; --radius-pill: 999px;
+
+  --shadow-tab: 0 4px 12px rgba(123,92,245,.3);
+  --shadow-window: 0 40px 120px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.04);
+  --shadow-featured: 0 0 0 4px rgba(123,92,245,.12), 0 24px 60px rgba(123,92,245,.18);
+  --blur-nav: blur(16px);
+}
+
+.mx-marketing-root {
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}

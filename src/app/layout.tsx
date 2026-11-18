@@ -1,1 +1,0 @@
-import './globals.css';export const metadata={title:'Mixio Account Portal',description:'Mixio account portal preview'};export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
