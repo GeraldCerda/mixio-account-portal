@@ -320,11 +320,11 @@ export function FaqSection() {
         </div>
         <div className="faq">
           <details className="mx-faq"><summary className="mx-faq-q">Which DAWs does Mixio work with?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
-            <p className="mx-faq-a">Mixio works inside Pro Tools, Ableton Live, Logic Pro, FL Studio and Cubase. If your DAW supports VST3 or AU plugins, Mixio will work.</p></details>
+            <p className="mx-faq-a">Mixio supports Pro Tools, Ableton Live, Logic Pro, FL Studio, and Cubase. Plugin formats and Assistant capabilities can vary by DAW.</p></details>
           <details className="mx-faq"><summary className="mx-faq-q">Does it run on Mac and Windows?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
             <p className="mx-faq-a">Yes. Mixio works on Mac (Intel and Apple Silicon) and Windows 10/11.</p></details>
           <details className="mx-faq"><summary className="mx-faq-q">How do I install it?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
-            <p className="mx-faq-a">Once your trial starts, you'll get a Mac or Windows download and an email with setup steps. Install it, activate it, then open it as a plugin in your DAW. <a className="inline-link" href="/resources/installation">Installation guide</a></p></details>
+            <p className="mx-faq-a">Download and activation access is not connected to this preview yet. Contact Mixio support for installation help. <a className="inline-link" href="/resources/installation">Installation guide</a></p></details>
           <details className="mx-faq"><summary className="mx-faq-q">What does the Assistant do?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
             <p className="mx-faq-a">Accept the mix as it is, or describe the change you want in plain language, like “give the guitars more presence”, and refine it in real time.</p></details>
           <details className="mx-faq"><summary className="mx-faq-q">Will Mixio override my decisions?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
@@ -332,7 +332,7 @@ export function FaqSection() {
           <details className="mx-faq"><summary className="mx-faq-q">Do I need a card for the free trial?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
             <p className="mx-faq-a" data-offer-text="faqCard"></p></details>
           <details className="mx-faq"><summary className="mx-faq-q">How do I cancel?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
-            <p className="mx-faq-a">Cancel from your account before your trial ends and you won't be charged. <a className="inline-link" href="/resources/subscriptions">Account and subscription information</a></p></details>
+            <p className="mx-faq-a">To avoid a charge, cancel before your trial ends. Account-based cancellation is not yet available on this preview; contact support for assistance. <a className="inline-link" href="/resources/subscriptions">Account and subscription information</a></p></details>
           <details className="mx-faq"><summary className="mx-faq-q">What happens when the trial ends?<span className="mx-faq-icon" aria-hidden="true">+</span></summary>
             <p className="mx-faq-a" data-offer-text="faqTrialEnd"></p></details>
         </div>
