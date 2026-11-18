@@ -43,7 +43,7 @@ export function LandingEffects() {
     const OFFER_TEXT: Record<string, string> = {
       terms: `Card required. Nothing charged for ${trialDays} days. Cancel anytime before your trial ends.`,
       faqCard: `Yes. A payment method is needed to start your trial, but nothing is charged today. You can cancel before the ${trialDays} days are up and you won't pay anything.`,
-      faqTrialEnd: `Your plan renews automatically after ${trialDays} days: ${formatPrice(OFFER.plans.monthly.price)}/${OFFER.plans.monthly.period} on monthly, or ${formatPrice(OFFER.plans.annual.price)}/${OFFER.plans.annual.period} on annual. Cancel before then and you won't be charged.`,
+      faqTrialEnd: `Your plan renews automatically after ${trialDays} days: ${formatPrice(OFFER.plans.monthly.price)}/${OFFER.plans.monthly.period} on monthly, or ${formatPrice(OFFER.plans.yearly.price)}/${OFFER.plans.yearly.period} on yearly. Cancel before then and you won't be charged.`,
     };
     const OFFER_LISTS: Record<string, string[]> = {
       planFeatures: [
