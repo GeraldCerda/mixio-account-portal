@@ -1,4 +1,5 @@
 import "server-only";
+export { accountSections } from "./account-sections";
 
 export type AccountSection = "overview" | "subscription" | "billing" | "license" | "settings" | "feedback";
 
@@ -45,15 +46,6 @@ export interface AccountSnapshot {
   license: AccountLicense | null;
   devices: AccountDevice[] | null;
 }
-
-export const accountSections = [
-  { id: "overview", label: "Overview", href: "/account" },
-  { id: "subscription", label: "Subscription", href: "/account/subscription" },
-  { id: "billing", label: "Billing history", href: "/account/billing" },
-  { id: "license", label: "License & devices", href: "/account/license" },
-  { id: "settings", label: "Account settings", href: "/account/settings" },
-  { id: "feedback", label: "Feedback", href: "/account/feedback" },
-] as const;
 
 export async function getVerifiedAccountSession(): Promise<AccountSession | null> {
   return null;
