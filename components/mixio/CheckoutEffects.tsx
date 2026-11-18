@@ -26,7 +26,7 @@ export function CheckoutEffects() {
 
     const TRIAL_DAYS = CONFIG.trialDays;
     const q = new URLSearchParams(window.location.search);
-    const plan = offerMap[q.get("plan") || ""] || offerMap.annual;
+    const plan = offerMap[q.get("plan") || ""] || offerMap.yearly;
 
     const fmt = (d: Date) =>
       d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
