@@ -21,7 +21,7 @@ export function ConfirmationEffects() {
     });
 
     const q = new URLSearchParams(window.location.search);
-    const plan = offerMap[q.get("plan") || ""] || offerMap.annual;
+    const plan = offerMap[q.get("plan") || ""] || offerMap.yearly;
     const D = CONFIG.trialDays;
     const fmt = (d: Date) =>
       d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
