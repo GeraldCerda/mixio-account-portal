@@ -24,12 +24,12 @@ export function AccountGate() {
   );
 }
 
-export function AccountFrame({ session, children }: { session: AccountSession; children: ReactNode }) {
+export function AccountFrame({ session, preview, children }: { session: AccountSession | null; preview: boolean; children: ReactNode }) {
   return (
     <div className="mx-account-root">
       <header className="mx-account-top">
         <Link className="mx-account-brand" href="/"><img src="/assets/img/mixio-logo-white.png" alt="Mixio" width={761} height={158} /></Link>
-        <span className="mx-account-top-label">MY ACCOUNT</span>
+        <span className="mx-account-top-label">{preview ? "ACCOUNT PREVIEW" : "MY ACCOUNT"}</span>
         <Link className="mx-account-back" href="/">Return to website</Link>
       </header>
       <div className="mx-account-layout">
@@ -42,11 +42,13 @@ export function AccountFrame({ session, children }: { session: AccountSession; c
             <Link href="/support">Contact support</Link>
           </div>
           <div className="mx-account-identity">
-            <strong>{session.displayName ?? "Mixio customer"}</strong>
-            <small>{session.email}</small>
+            <strong>{preview ? "Preview mode" : session?.displayName ?? "Mixio customer"}</strong>
+            <small>{preview ? "No customer signed in" : session?.email}</small>
           </div>
         </aside>
-        <div className="mx-account-main">{children}
+        <div className="mx-account-main">
+          {preview && <div className="mx-account-preview-banner" role="status"><strong>Preview mode</strong><span>Explore all account pages without signing in. No real customer, subscription, billing, or license data is connected. Actions that require authentication are disabled.</span></div>}
+          {children}
           <footer className="mx-account-footer"><span>© {new Date().getFullYear()} Mixio</span><Link href="/support">Support</Link></footer>
         </div>
       </div>
@@ -75,7 +77,7 @@ function formatDate(value: string) {
   return Number.isNaN(date.valueOf()) ? "Unavailable" : new Intl.DateTimeFormat("en-US", { dateStyle: "medium" }).format(date);
 }
 
-export function AccountContent({ section, session, snapshot }: { section: AccountSection; session: AccountSession; snapshot: AccountSnapshot }) {
+export function AccountContent({ section, session, snapshot }: { section: AccountSection; session: AccountSession | null; snapshot: AccountSnapshot }) {
   const page = accountSections.find(item => item.id === section);
   const title = page?.label ?? "Overview";
   return (
@@ -137,8 +139,8 @@ export function AccountContent({ section, session, snapshot }: { section: Accoun
         {section === "settings" && (
           <>
             <Panel title="Personal information" description="Your verified account profile">
-              <Row label="Email address" value={session.email} />
-              <Row label="Name" value={session.displayName ?? "Not provided"} />
+              <Row label="Email address" value={session?.email ?? "Not connected"} />
+              <Row label="Name" value={session?.displayName ?? "Not connected"} />
               <p className="mx-account-muted">Profile editing will be enabled when the existing account update service is connected.</p>
             </Panel>
             <Panel title="Security and privacy" description="Manage account access and security">
